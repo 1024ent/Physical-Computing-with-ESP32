@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Object Detection</h1>
+        
+        <!-- Video Feed -->
+        <div id="video-container">
+            <video id="video" autoplay></video>
+        </div>
+
+        <!-- Detection Result -->
+        <div id="label-container">
+            <p id="label">Waiting...</p>
+        </div>
+
+        <!-- Buttons -->
+        <div class="button-container">
+            <button id="connect-button">Connect to ESP32</button>
+            <button id="back-button">Back</button>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/ml5@0.12.2/dist/ml5.min.js"></script>
+    <script src="detection.js"></script>
+</body>
+</html>
